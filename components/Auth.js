@@ -34,8 +34,8 @@ export default function Auth() {
   return (
     <div className="relative flex h-screen w-screen items-center justify-center overflow-hidden bg-[#0b1410] font-sans">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="animate-[scrollDown_18s_linear_infinite]">
-          {Array.from({ length: 20 }).map((_, i) => (
+        <div className="animate-[scrollDown_30s_linear_infinite]">
+          {[...Array(40), ...Array(40)].map((_, i) => (
             <div
               key={i}
               className={`select-none whitespace-nowrap py-1 text-[112px] font-black leading-none tracking-[-3px] text-[#1a3325] ${
