@@ -266,26 +266,6 @@ export default function Dashboard({ user }) {
                   <p className="whitespace-pre-wrap text-sm leading-6">
                     {message.content}
                   </p>
-
-                  {message.citations?.length > 0 && (
-                    <div className="mt-4 border-t pt-3">
-                      <p className="mb-2 text-xs font-semibold text-gray-500">
-                        Sources
-                      </p>
-
-                      <div className="space-y-2">
-                        {message.citations.map((citation, i) => (
-                          <div
-                            key={i}
-                            className="rounded-lg bg-gray-50 p-2 text-xs text-gray-600"
-                          >
-                            <p className="font-medium">{citation.label}</p>
-                            <p className="line-clamp-2">{citation.preview}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
                 </div>
               ))
             )}
